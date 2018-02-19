@@ -4,12 +4,15 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I am a former physicist, future data scientist, but right now, I'm a data analyst. One of the reasons I really enjoy data science, is because how interdisciplinary it is. One of my favorite things to do is to ask questions, and with the power of data, I can answer these questions. 
 
-### More Information
+I have a lot of ideas for projects, so stay tuned, I've got some good stuff coming. 
 
-A place to include any other types of information that you'd like to include about yourself.
+#### What else?
 
-### Contact me
+Beyond physics and data, I enjoy cooking, listing to music, being outside, and reading. 
 
-[email@domain.com](mailto:email@domain.com)
+#### Let's talk!
+
+Shoot me an email if you are interested in what I am doing, if you want to talk data or about something completely unrelated. 
+[dana.cody.sn@gmail.com](mailto:dana.cody.sn@gmail.com)
