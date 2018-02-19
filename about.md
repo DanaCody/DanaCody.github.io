@@ -14,5 +14,4 @@ Beyond physics and data, I enjoy cooking, listing to music, being outside, and r
 
 #### Let's talk!
 
-Shoot me an email if you are interested in what I am doing, if you want to talk data or about something completely unrelated. 
-[dana.cody.sn@gmail.com](mailto:dana.cody.sn@gmail.com)
+Shoot me an email if you are interested in what I am doing, if you want to talk data or about something completely unrelated. I'd love to chat. My email is [dana.cody.sn@gmail.com](mailto:dana.cody.sn@gmail.com).
