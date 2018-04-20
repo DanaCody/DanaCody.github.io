@@ -84,7 +84,7 @@ In this plot, we can see the relationship between alcohol and chlorides and how 
 Salt blocks the bitter receptors on our tongues. You can read more about that here: 
 ( https://www.npr.org/sections/thesalt/2016/11/14/491376510/grapefruit-and-salt-the-science-behind-this-unlikely-power-couple ) I'd guess that when you make a wine that ends up being too bitter, you can add a little bit of salt to hide the bitter taste. That bitter wine, and wine that has had it's bitterness covered up with salt, still isn't good. I'd guess that adding salt almost treats the symptoms of the bitterness but it doesn't fix the fact the the wine is bitter. Which might have an effect on the overall taste or quality.
 
-* The less alcohol in the wine, the greater the variance in the density of the wine. I'd guess wines with lower alcohol contents tend to have more issues during perfermentation, which could cause bitter wine, which would require a little bit of salt to cover it up.
+The less alcohol in the wine, the greater the variance in the density of the wine. I'd guess wines with lower alcohol contents tend to have more issues during fermentation, which could cause bitter wine, which would require a little bit of salt to cover it up.
 
 
 ![plot of chunk Plot_Three]({{"../assets/Plot_Three-1.png"}})
