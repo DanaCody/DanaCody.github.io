@@ -2,7 +2,6 @@
 layout: post
 title: Synopsis of Wine Analysis
 ---
-# White Wine Exploratory Data Analysis
 
 I completed this project through Udacity's Data Analyst Nanodegree. I really enjoyed the nanodegree and look forward to taking my next one, whenever that may be.
 
@@ -11,29 +10,29 @@ https://github.com/DanaCody/White-Wine-EDA
 
 This is just a brief synopsis of my exploratory data analysis of white wine. The full analysis was completed in RStudio.
 
-## About the Data
+### About the Data
 
 The data was provided by Udacity for the exploratory data analysis project. Our data are variants of “Vinho Verde”, a Portuguese white wine. 
 
 We have over 4,800 samples of wine for this dataset. Our predictor variables are chemical qualities of the wines. While, our predictor variable is sensory data (median of at least 3 evaluations made by wine experts). Each expert graded the wine quality between 0 (very bad) and 10 (very excellent). The following is a list of the variables: fixed acidity, volatile acidity, citric acid, residual sugar, chlorides, free sulfur dioxide, total sulfur dioxide, density, pH, sulphates, and alcohol.
 
-### Univariate Analysis
+#### Univariate Analysis
 
 To begin, I looked at the distribution of each variable by itself. Most of the variables have approximately normal distributions with a few outliers, except for residual sugar. 
 
 I created a few variables during this analysis. I created a variable from quality, which was just to decrease the granularity of the data. I figured it would just make it easier to see the general patterns of the data. I also created a variable, called bound sulfur dioxide. It was essentially just the difference between total sulfur dioxide and free sulfur dioxide. 
 
-### Bivariate Analysis
+#### Bivariate Analysis
 
 To start, I created a scatterplot matrix of all the continuous (ratio) variables, which can be seen below:
 ![plot of chunk unnamed-chunk-5]({{"../assets/unnamed-chunk-5-1.png"}})
 
 From this plot, I created a chart that notes all the meaningful relationships (r > |0.3|) between variables. I have pasted the chart below:
 
-#### Meaningful Relationships between Indicator Variables
+##### Meaningful Relationships between Indicator Variables
 
    Variable                   Variable                  Correlation 
-  ----------                 ----------                -------------  
+  -------------              ------------             ---------------  
   residual sugar              total sulfur dioxide      0.401
   free sulfur dioxide         total sulfur dioxide      0.616
   residual sugar              density                   0.839
@@ -50,7 +49,7 @@ From this plot, I created a chart that notes all the meaningful relationships (r
   
 A lot of these correlation coefficients make sense. The largest correlation coefficient in our chart is between total sulfur dioxide and bound sulfur dioxide with a value of _0.922_. Bound sulfur dioxide and total sulfur dioxide are collinear, remember that I created the bound sulfur dioxide variable from the total sulfur dioxide and free sulfur dioxide. The next highest correlation coefficients are for residual sugar and density with a value of _0.839_, and alcohol and density with a value of _-0.78_. I explain these relationships more down below. 
 
-#### Meaningful Quality Predictor Variables
+##### Meaningful Quality Predictor Variables
   
 Please note that quality wasn't included in these due to that fact that quality is an ordinal variable. Ordinal variables require use of Spearman's rank correlation coefficient(\rho) . The following variables have a |\rho| greater than
 0.3.
@@ -65,7 +64,7 @@ alcohol                  0.44037
 
 The relationship between _quality_ and _alcohol_ can be seen more clearly below:
 
-![plot of chunk unnamed-chunk-6](Figs/unnamed-chunk-6-1.png)
+![plot of chunk unnamed-chunk-6]({{"../assets/unnamed-chunk-6-1.png"}})
 
 _The green dots on each boxplot are the mean alcohol content for each quality of wine. The faint horizontal green line on the plot is the mean alcohol content for the entire dataset, which is 10.51. The faint black line on the plot is the median alcohol content for the entire dataset, which is 10.4._  
 
@@ -76,7 +75,7 @@ As seen on the above plot, the alcohol and quality trend is more apparent for hi
 
 ### Multivariate Analysis
 
-![plot of chunk Plot_Two](Figs/Plot_Two-1.png)
+![plot of chunk Plot_Two]({../assets/Plot_Two-1.png})
 
 _Wines with a quality of 6 were removed from this plot to reduce overplotting and to better differentiate the trends between the wine quality._
 
@@ -88,7 +87,7 @@ Salt blocks the bitter receptors on our tongues. You can read more about that he
 * The less alcohol in the wine, the greater the variance in the density of the wine. I'd guess wines with lower alcohol contents tend to have more issues during perfermentation, which could cause bitter wine, which would require a little bit of salt to cover it up.
 
 
-![plot of chunk Plot_Three](Figs/Plot_Three-1.png)
+![plot of chunk Plot_Three]({{"../assets/Plot_Three-1.png"}})
 
 
 Of all of the variables compared with eachother, density and residual sugar have the strongest coefficient with a value of 0.839. Our first plot visualizes this strong relationship, quite nicely. The beautiful alcohol color gradient on this same plot nicely shows that most density variations are due to alcohol content. When you look at a vertical slice of this top plot, we look at wines with similar levels of residual sugar content. For this vertical slice, our color gradient proves that variations in density are due to differing alcohol content. This makes sense, when consdering the density of alcohol and residual sugar. __The density of sugar (glucose) is 1.54 g/cm^3^, the density of water is 1.00g/cm^3^ and the density of alcohol (ethanol) is 0.789.__ Our color gradient turns darker towards the end of our plot, meaning less alcohol.
