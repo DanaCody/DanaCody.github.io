@@ -26,8 +26,7 @@ I created a few variables during this analysis. I created a variable from qualit
 ### Bivariate Analysis
 
 To start, I created a scatterplot matrix of all the continuous (ratio) variables, which can be seen below:
-
-![plot of chunk unnamed-chunk-5](../assets/unnamed-chunk-5-1.png)
+![plot of chunk unnamed-chunk-5]({{"../assets/unnamed-chunk-5-1.png"}})
 
 From this plot, I created a chart that notes all the meaningful relationships (r > |0.3|) between variables. I have pasted the chart below:
 
