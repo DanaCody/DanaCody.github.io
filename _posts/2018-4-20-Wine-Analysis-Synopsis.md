@@ -50,8 +50,7 @@ A lot of these correlation coefficients make sense. The largest correlation coef
 
 ##### Meaningful Quality Predictor Variables
   
-Please note that quality wasn't included in these due to that fact that quality is an ordinal variable. Ordinal variables require use of Spearman's rank correlation coefficient (rho) . The following variables have a $ rho $ greater than
-0.3.
+Ordinal variables require use of Spearman's rank correlation coefficient (rho). This test was run with every variable. Meaningful quality predictor variables are on the chart below. A meaningful relationship is one with a rank correlation coefficient greater than 0.3.
 
  __Variable__    |||   __Correlation__
 -----------------|||-------------
