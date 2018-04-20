@@ -30,21 +30,21 @@ From this plot, I created a chart that notes all the meaningful relationships be
 
 ##### Meaningful Relationships between Indicator Variables
 
-   Variable            |||    Variable          |||    Correlation 
-  ---------------------|||----------------------|||--------------  
-  residual sugar       ||| total sulfur dioxide ||| 0.401
-  free sulfur dioxide  ||| total sulfur dioxide ||| 0.616
-  residual sugar       ||| density              |||0.839
-  fixed acidity        ||| pH                   ||| -0.426
-  total sulfur dioxide ||| density              ||| 0.53  
-  residual sugar       ||| bound sulfur dioxide ||| 0.345
-  total sulfur dioxide ||| bound sulfur dioxide ||| 0.922
-  density              ||| bound sulfur dioxide ||| 0.504
-  alcohol              ||| bound sulfur dioxide ||| -0.427    
-  residual sugar       ||| alcohol              ||| -0.451
-  chlorides            ||| alcohol              ||| -0.36
-  total sulfur dioxide ||| alcohol              ||| -0.449
-  density              ||| alcohol              ||| -0.78
+   __Variable__            |||    __Variable__          |||    __Correlation__ 
+  -------------------------|||--------------------------|||--------------  
+    residual sugar         |||   total sulfur dioxide   |||  0.401
+    free sulfur dioxide    |||   total sulfur dioxide   |||  0.616
+    residual sugar         |||   density                |||  0.839
+    fixed acidity          |||   pH                     |||  -0.426
+    total sulfur dioxide   |||   density                |||  0.53  
+    residual sugar         |||   bound sulfur dioxide   |||  0.345
+    total sulfur dioxide   |||   bound sulfur dioxide   |||  0.922
+    density                |||   bound sulfur dioxide   |||  0.504
+    alcohol                |||   bound sulfur dioxide   |||  -0.427    
+    residual sugar         |||   alcohol                |||  -0.451
+    chlorides              |||   alcohol                |||  -0.36
+    total sulfur dioxide   |||   alcohol                |||  -0.449
+    density                |||   alcohol                |||  -0.78
   
 A lot of these correlation coefficients make sense. The largest correlation coefficient in our chart is between total sulfur dioxide and bound sulfur dioxide with a value of __0.922__. Bound sulfur dioxide and total sulfur dioxide are colinear, remember that I created the bound sulfur dioxide variable from the total sulfur dioxide and free sulfur dioxide. The next highest correlation coefficients are for residual sugar and density with a value of __0.839__, and alcohol and density with a value of __-0.78__. I explain these relationships more down below. 
 
@@ -53,11 +53,11 @@ A lot of these correlation coefficients make sense. The largest correlation coef
 Please note that quality wasn't included in these due to that fact that quality is an ordinal variable. Ordinal variables require use of Spearman's rank correlation coefficient (rho) . The following variables have a $ rho $ greater than
 0.3.
 
- Variable    |||   Correlation
--------------|||-------------
-chlorides    ||| -0.31449
-density      ||| -0.34835
-alcohol      ||| 0.44037
+ __Variable__    |||   __Correlation__
+-----------------|||-------------
+  chlorides      ||| -0.31449
+  density        ||| -0.34835
+  alcohol        ||| 0.44037
 
 The relationship between _quality_ and _alcohol_ can be seen more clearly below:
 
