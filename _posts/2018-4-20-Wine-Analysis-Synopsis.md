@@ -26,38 +26,38 @@ I created a few variables during this analysis. I created a variable from qualit
 To start, I created a scatterplot matrix of all the continuous (ratio) variables, which can be seen below:
 ![plot of chunk unnamed-chunk-5]({{"../assets/unnamed-chunk-5-1.png"}})
 
-From this plot, I created a chart that notes all the meaningful relationships (r > |0.3|) between variables. I have pasted the chart below:
+From this plot, I created a chart that notes all the meaningful relationships between variables. I consider meaningful relationships to be one where the absolute value of the correlation coefficient is greater than 0.3 I have pasted the chart below:
 
 ##### Meaningful Relationships between Indicator Variables
 
-   Variable | Variable | Correlation 
-  ----------|----------|--------------  
-  residual sugar | total sulfur dioxide | 0.401
-  free sulfur dioxide | total sulfur dioxide | 0.616
-  residual sugar | density | 0.839
-  fixed acidity | pH | -0.426
-  total sulfur dioxide | density | 0.53  
-  residual sugar | bound sulfur dioxide | 0.345
+   Variable            |    Variable          |    Correlation 
+  ---------------------|----------------------|--------------  
+  residual sugar       | total sulfur dioxide | 0.401
+  free sulfur dioxide  | total sulfur dioxide | 0.616
+  residual sugar       | density              | 0.839
+  fixed acidity        | pH                   | -0.426
+  total sulfur dioxide | density              | 0.53  
+  residual sugar       | bound sulfur dioxide | 0.345
   total sulfur dioxide | bound sulfur dioxide | 0.922
-  density | bound sulfur dioxide | 0.504
-  alcohol | bound sulfur dioxide | -0.427    
-  residual sugar | alcohol | -0.451
-  chlorides | alcohol | -0.36
-  total sulfur dioxide | alcohol | -0.449
-  density | alcohol | -0.78
+  density              | bound sulfur dioxide | 0.504
+  alcohol              | bound sulfur dioxide | -0.427    
+  residual sugar       | alcohol              | -0.451
+  chlorides            | alcohol              | -0.36
+  total sulfur dioxide | alcohol              | -0.449
+  density              | alcohol              | -0.78
   
 A lot of these correlation coefficients make sense. The largest correlation coefficient in our chart is between total sulfur dioxide and bound sulfur dioxide with a value of _0.922_. Bound sulfur dioxide and total sulfur dioxide are collinear, remember that I created the bound sulfur dioxide variable from the total sulfur dioxide and free sulfur dioxide. The next highest correlation coefficients are for residual sugar and density with a value of _0.839_, and alcohol and density with a value of _-0.78_. I explain these relationships more down below. 
 
 ##### Meaningful Quality Predictor Variables
   
-Please note that quality wasn't included in these due to that fact that quality is an ordinal variable. Ordinal variables require use of Spearman's rank correlation coefficient(\rho) . The following variables have a |\rho| greater than
+Please note that quality wasn't included in these due to that fact that quality is an ordinal variable. Ordinal variables require use of Spearman's rank correlation coefficient( \rho . The following variables have a |\rho| greater than
 0.3.
 
- Variable | Correlation
-----------|-------------
-chlorides | -0.31449
-density   | -0.34835
-alcohol   |  0.44037
+ Variable    | Correlation
+-------------|-------------
+chlorides    | -0.31449
+density      | -0.34835
+alcohol      |  0.44037
 
 The relationship between _quality_ and _alcohol_ can be seen more clearly below:
 
@@ -78,7 +78,7 @@ _Wines with a quality of 6 were removed from this plot to reduce overplotting an
 
 In this plot, we can see the relationship between alcohol and chlorides and how they both relate to quality. Wines with less alcohol, and more chlorides tend to be of a poorer quality.  While wines with more alcohol and less chlorides tend to be of a poorer quality. There is a greater variance in chloride content for wines with lower alcohol content.
 
-Salt blocks the bitter receptors on our tongues. You can read more about that [here.] https://www.npr.org/sections/thesalt/2016/11/14/491376510/grapefruit-and-salt-the-science-behind-this-unlikely-power-couple I'd guess that when you make a wine that ends up being too bitter, you can add a little bit of salt to hide the bitter taste. That bitter wine, and wine that has had it's bitterness covered up with salt, still isn't good. I'd guess that adding salt almost treats the symptoms of the bitterness but it doesn't fix the fact the the wine is bitter. Which might have an effect on the overall taste or quality.
+Salt blocks the bitter receptors on our tongues. You can read more about that [here.] (https://www.npr.org/sections/thesalt/2016/11/14/491376510/grapefruit-and-salt-the-science-behind-this-unlikely-power-couple) I'd guess that when you make a wine that ends up being too bitter, you can add a little bit of salt to hide the bitter taste. That bitter wine, and wine that has had it's bitterness covered up with salt, still isn't good. I'd guess that adding salt almost treats the symptoms of the bitterness but it doesn't fix the fact the the wine is bitter. Which might have an effect on the overall taste or quality.
 
 The less alcohol in the wine, the greater the variance in the density of the wine. I'd guess wines with lower alcohol contents tend to have more issues during fermentation, which could cause bitter wine, which would require a little bit of salt to cover it up.
 
