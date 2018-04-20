@@ -5,8 +5,7 @@ title: Synopsis of Wine Analysis
 
 I completed this project through Udacity's Data Analyst Nanodegree. I really enjoyed the nanodegree and look forward to taking my next one, whenever that may be.
 
-If you would like to see the code of my analysis, it will be available here:
-https://github.com/DanaCody/White-Wine-EDA
+If you would like to see the code of my analysis, it will be available [here.](https://github.com/DanaCody/White-Wine-EDA)
 
 This is just a brief synopsis of my exploratory data analysis of white wine. The full analysis was completed in RStudio.
 
@@ -31,21 +30,21 @@ From this plot, I created a chart that notes all the meaningful relationships (r
 
 ##### Meaningful Relationships between Indicator Variables
 
-   Variable                   Variable                  Correlation 
-  -------------              ------------             ---------------  
-  residual sugar              total sulfur dioxide      0.401
-  free sulfur dioxide         total sulfur dioxide      0.616
-  residual sugar              density                   0.839
-  fixed acidity               pH                        -0.426
-  total sulfur.dioxide        density                   0.53  
-  residual sugar              bound sulfur dioxide      0.345
-  total sulfur dioxide        bound sulfur dioxide      0.922
-  density                     bound sulfur dioxide      0.504
-  alcohol                     bound sulfur dioxide      -0.427    
-  residual sugar              alcohol                   -0.451
-  chlorides                   alcohol                   -0.36
-  total sulfur dioxide        alcohol                   -0.449
-  density                     alcohol                   -0.78
+   Variable | Variable | Correlation 
+  ----------|----------|--------------  
+  residual sugar | total sulfur dioxide | 0.401
+  free sulfur dioxide | total sulfur dioxide | 0.616
+  residual sugar | density | 0.839
+  fixed acidity | pH | -0.426
+  total sulfur dioxide | density | 0.53  
+  residual sugar | bound sulfur dioxide | 0.345
+  total sulfur dioxide | bound sulfur dioxide | 0.922
+  density | bound sulfur dioxide | 0.504
+  alcohol | bound sulfur dioxide | -0.427    
+  residual sugar | alcohol | -0.451
+  chlorides | alcohol | -0.36
+  total sulfur dioxide | alcohol | -0.449
+  density | alcohol | -0.78
   
 A lot of these correlation coefficients make sense. The largest correlation coefficient in our chart is between total sulfur dioxide and bound sulfur dioxide with a value of _0.922_. Bound sulfur dioxide and total sulfur dioxide are collinear, remember that I created the bound sulfur dioxide variable from the total sulfur dioxide and free sulfur dioxide. The next highest correlation coefficients are for residual sugar and density with a value of _0.839_, and alcohol and density with a value of _-0.78_. I explain these relationships more down below. 
 
@@ -54,13 +53,11 @@ A lot of these correlation coefficients make sense. The largest correlation coef
 Please note that quality wasn't included in these due to that fact that quality is an ordinal variable. Ordinal variables require use of Spearman's rank correlation coefficient(\rho) . The following variables have a |\rho| greater than
 0.3.
 
- Variable                Correlation
-----------              -------------
-chlorides                -0.31449
-density                  -0.34835
-alcohol                  0.44037
-
-
+ Variable | Correlation
+----------|-------------
+chlorides | -0.31449
+density   | -0.34835
+alcohol   |  0.44037
 
 The relationship between _quality_ and _alcohol_ can be seen more clearly below:
 
@@ -75,14 +72,13 @@ As seen on the above plot, the alcohol and quality trend is more apparent for hi
 
 ### Multivariate Analysis
 
-![plot of chunk Plot_Two]({../assets/Plot_Two-1.png})
+![plot of chunk Plot_Two]({{"../assets/Plot_Two-1.png"}})
 
 _Wines with a quality of 6 were removed from this plot to reduce overplotting and to better differentiate the trends between the wine quality._
 
 In this plot, we can see the relationship between alcohol and chlorides and how they both relate to quality. Wines with less alcohol, and more chlorides tend to be of a poorer quality.  While wines with more alcohol and less chlorides tend to be of a poorer quality. There is a greater variance in chloride content for wines with lower alcohol content.
 
-Salt blocks the bitter receptors on our tongues. You can read more about that here:      
-( https://www.npr.org/sections/thesalt/2016/11/14/491376510/grapefruit-and-salt-the-science-behind-this-unlikely-power-couple ) I'd guess that when you make a wine that ends up being too bitter, you can add a little bit of salt to hide the bitter taste. That bitter wine, and wine that has had it's bitterness covered up with salt, still isn't good. I'd guess that adding salt almost treats the symptoms of the bitterness but it doesn't fix the fact the the wine is bitter. Which might have an effect on the overall taste or quality.
+Salt blocks the bitter receptors on our tongues. You can read more about that [here.] https://www.npr.org/sections/thesalt/2016/11/14/491376510/grapefruit-and-salt-the-science-behind-this-unlikely-power-couple I'd guess that when you make a wine that ends up being too bitter, you can add a little bit of salt to hide the bitter taste. That bitter wine, and wine that has had it's bitterness covered up with salt, still isn't good. I'd guess that adding salt almost treats the symptoms of the bitterness but it doesn't fix the fact the the wine is bitter. Which might have an effect on the overall taste or quality.
 
 The less alcohol in the wine, the greater the variance in the density of the wine. I'd guess wines with lower alcohol contents tend to have more issues during fermentation, which could cause bitter wine, which would require a little bit of salt to cover it up.
 
@@ -101,7 +97,7 @@ If I were to investigate more into this I would like to investigate what differe
 I also believe there was a twin dataset to this one for red wines. It would definitely be interesting to see the difference between the two dataset. Perhaps, using a classifier algorithm.
 
 If you have any questions or comments please do not hesistate to contact me:
-dana.cody.sn@gmail.com
+__dana.cody.sn@gmail.com__
 
 
 
